@@ -168,8 +168,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BrandsController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CatalogController.cs" />
+    <Compile Include="Controllers\CheckoutController.cs" />
+    <Compile Include="Controllers\CompareController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\VendorsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1443,6 +1449,15 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Vendors\List.cshtml" />
+    <Content Include="Views\Vendors\Show.cshtml" />
+    <Content Include="Views\Brands\List.cshtml" />
+    <Content Include="Views\Brands\Show.cshtml" />
+    <Content Include="Views\Cart\List.cshtml" />
+    <Content Include="Views\Catalog\List.cshtml" />
+    <Content Include="Views\Catalog\Show.cshtml" />
+    <Content Include="Views\Checkout\List.cshtml" />
+    <Content Include="Views\Compare\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
