@@ -1,249 +1,226 @@
 ﻿
 @{
     ViewBag.Title = "List";
+    ViewBag.PageHeader= "Vendors List";
 }
-<!-- Start of Page Header -->
-<div class="page-header">
-    <div class="container">
-        <h1 class="page-title mb-0">Vendors List</h1>
+
+<!-- Start of Vendor Filter -->
+<div class="vendor-filter mb-4">
+    <div class="vendor-filter-left mr-auto">
+        <div class="select-box mb-2 mr-2">
+            <select name="sortby" class="form-control">
+                <option value="date" selected="selected">By date</option>
+                <option value="alphabet">By Alphabetically</option>
+                <option value="category">By Category</option>
+                <option value="shipping">By Shipping</option>
+            </select>
+        </div>
+        <a href="#" class="btn btn-rounded mb-2 mr-4">Sort</a>
+    </div>
+    <div class="vendor-filter-right">
+        <label class="d-inline-block font-size-md text-dark mb-2">Viewing all 6 vendors</label>
     </div>
 </div>
-<!-- End of Page Header -->
-<!-- Start of Breadcrumb -->
-<nav class="breadcrumb-nav">
-    <div class="container">
-        <ul class="breadcrumb bb-no">
-            <li><a href="demo1.html">Home</a></li>
-            <li><a href="#">Vendor</a></li>
-            <li><a href="#">WC Marketplace</a></li>
-            <li>Store List</li>
-        </ul>
+<!-- End of Vendor Filter -->
+<!-- Start of Vendor Store -->
+<div class="row cols-lg-3 cols-sm-2">
+    <div class="store-wrap mb-4">
+        <div class="store store-wcmp br-sm">
+            <figure class="store-banner">
+                <img src="~/Content/assets\images\vendor\wcmp\1.jpg" alt="Vendor" width="400" height="318" style="background-color: #454b63;">
+            </figure>
+            <div class="store-content">
+                <figure class="seller-brand">
+                    <img src="~/Content/assets\images\vendor\brand\1.jpg" alt="Brand" width="80" height="80">
+                </figure>
+                <div class="seller-date">
+                    <h4 class="store-title">
+                        <a href="vendor-wcmp-store.html">Vendor 1</a>
+                    </h4>
+                    <ul class="seller-info-list list-style-none">
+                        <li class="store-address">
+                            <i class="w-icon-map-marker"></i>
+                            <p>
+                                287 cherry Hill Ave. South El
+                                Monte, CA 91733, Aland lslands
+                            </p>
+                        </li>
+                        <li class="store-rating">
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width: 100%;"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Store -->
     </div>
-</nav>
-<!-- End of Breadcrumb -->
-<div class="page-content mb-8">
-    <div class="container">
-
-
-        <!-- Start of Vendor Filter -->
-        <div class="vendor-filter mb-4">
-            <div class="vendor-filter-left mr-auto">
-                <div class="select-box mb-2 mr-2">
-                    <select name="sortby" class="form-control">
-                        <option value="date" selected="selected">By date</option>
-                        <option value="alphabet">By Alphabetically</option>
-                        <option value="category">By Category</option>
-                        <option value="shipping">By Shipping</option>
-                    </select>
+    <div class="store-wrap mb-4">
+        <div class="store store-wcmp br-sm">
+            <figure class="store-banner">
+                <img src="~/Content/assets\images\vendor\wcmp\2.jpg" alt="Vendor" width="400" height="318" style="background-color: #6a6867;">
+            </figure>
+            <div class="store-content">
+                <figure class="seller-brand">
+                    <img src="~/Content/assets\images\vendor\brand\2.jpg" alt="Brand" width="80" height="80">
+                </figure>
+                <div class="seller-date">
+                    <h4 class="store-title">
+                        <a href="vendor-wcmp-store.html">Vendor 2</a>
+                    </h4>
+                    <ul class="seller-info-list list-style-none">
+                        <li class="store-address">
+                            <i class="w-icon-map-marker"></i>
+                            <p>
+                                Fuchu, Hiroshima, Thai Nguyen,
+                                Hiroshima, Japan,27000
+                            </p>
+                        </li>
+                        <li class="store-rating">
+                            <i class="w-icon-star-full"></i>
+                            <p>No Rating Yet</p>
+                        </li>
+                    </ul>
                 </div>
-                <a href="#" class="btn btn-rounded mb-2 mr-4">Sort</a>
-            </div>
-            <div class="vendor-filter-right">
-                <label class="d-inline-block font-size-md text-dark mb-2">Viewing all 6 vendors</label>
             </div>
         </div>
-        <!-- End of Vendor Filter -->
-        <!-- Start of Vendor Store -->
-        <div class="row cols-lg-3 cols-sm-2">
-            <div class="store-wrap mb-4">
-                <div class="store store-wcmp br-sm">
-                    <figure class="store-banner">
-                        <img src="~/Content/assets\images\vendor\wcmp\1.jpg" alt="Vendor" width="400" height="318" style="background-color: #454b63;">
-                    </figure>
-                    <div class="store-content">
-                        <figure class="seller-brand">
-                            <img src="~/Content/assets\images\vendor\brand\1.jpg" alt="Brand" width="80" height="80">
-                        </figure>
-                        <div class="seller-date">
-                            <h4 class="store-title">
-                                <a href="vendor-wcmp-store.html">Vendor 1</a>
-                            </h4>
-                            <ul class="seller-info-list list-style-none">
-                                <li class="store-address">
-                                    <i class="w-icon-map-marker"></i>
-                                    <p>
-                                        287 cherry Hill Ave. South El
-                                        Monte, CA 91733, Aland lslands
-                                    </p>
-                                </li>
-                                <li class="store-rating">
-                                    <div class="ratings-container">
-                                        <div class="ratings-full">
-                                            <span class="ratings" style="width: 100%;"></span>
-                                            <span class="tooltiptext tooltip-top"></span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- End of Store -->
+    </div>
+    <div class="store-wrap mb-4">
+        <div class="store store-wcmp br-sm">
+            <figure class="store-banner">
+                <img src="~/Content/assets\images\vendor\wcmp\3.jpg" alt="Vendor" width="400" height="318" style="background-color: #5a5958;">
+            </figure>
+            <div class="store-content">
+                <figure class="seller-brand">
+                    <img src="~/Content/assets\images\vendor\brand\3.jpg" alt="Brand" width="80" height="80">
+                </figure>
+                <div class="seller-date">
+                    <h4 class="store-title">
+                        <a href="vendor-wcmp-store.html">Vendor 3</a>
+                    </h4>
+                    <ul class="seller-info-list list-style-none">
+                        <li class="store-address">
+                            <i class="w-icon-map-marker"></i>
+                            <p>
+                                848 Baker Rd, Huntsville, AL 35803,
+                                Minato, Tokyo, Japan, 12000
+                            </p>
+                        </li>
+                        <li class="store-rating">
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width: 100%;"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- End of Store -->
-            </div>
-            <div class="store-wrap mb-4">
-                <div class="store store-wcmp br-sm">
-                    <figure class="store-banner">
-                        <img src="~/Content/assets\images\vendor\wcmp\2.jpg" alt="Vendor" width="400" height="318" style="background-color: #6a6867;">
-                    </figure>
-                    <div class="store-content">
-                        <figure class="seller-brand">
-                            <img src="~/Content/assets\images\vendor\brand\2.jpg" alt="Brand" width="80" height="80">
-                        </figure>
-                        <div class="seller-date">
-                            <h4 class="store-title">
-                                <a href="vendor-wcmp-store.html">Vendor 2</a>
-                            </h4>
-                            <ul class="seller-info-list list-style-none">
-                                <li class="store-address">
-                                    <i class="w-icon-map-marker"></i>
-                                    <p>
-                                        Fuchu, Hiroshima, Thai Nguyen,
-                                        Hiroshima, Japan,27000
-                                    </p>
-                                </li>
-                                <li class="store-rating">
-                                    <i class="w-icon-star-full"></i>
-                                    <p>No Rating Yet</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Store -->
-            </div>
-            <div class="store-wrap mb-4">
-                <div class="store store-wcmp br-sm">
-                    <figure class="store-banner">
-                        <img src="~/Content/assets\images\vendor\wcmp\3.jpg" alt="Vendor" width="400" height="318" style="background-color: #5a5958;">
-                    </figure>
-                    <div class="store-content">
-                        <figure class="seller-brand">
-                            <img src="~/Content/assets\images\vendor\brand\3.jpg" alt="Brand" width="80" height="80">
-                        </figure>
-                        <div class="seller-date">
-                            <h4 class="store-title">
-                                <a href="vendor-wcmp-store.html">Vendor 3</a>
-                            </h4>
-                            <ul class="seller-info-list list-style-none">
-                                <li class="store-address">
-                                    <i class="w-icon-map-marker"></i>
-                                    <p>
-                                        848 Baker Rd, Huntsville, AL 35803,
-                                        Minato, Tokyo, Japan, 12000
-                                    </p>
-                                </li>
-                                <li class="store-rating">
-                                    <div class="ratings-container">
-                                        <div class="ratings-full">
-                                            <span class="ratings" style="width: 100%;"></span>
-                                            <span class="tooltiptext tooltip-top"></span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Store -->
-            </div>
-            <div class="store-wrap mb-4">
-                <div class="store store-wcmp br-sm">
-                    <figure class="store-banner">
-                        <img src="~/Content/assets\images\vendor\wcmp\4.jpg" alt="Vendor" width="400" height="318" style="background-color: #585e65;">
-                    </figure>
-                    <div class="store-content">
-                        <figure class="seller-brand">
-                            <img src="~/Content/assets\images\vendor\brand\4.jpg" alt="Brand" width="80" height="80">
-                        </figure>
-                        <div class="seller-date">
-                            <h4 class="store-title">
-                                <a href="vendor-wcmp-store.html">Vendor 4</a>
-                            </h4>
-                            <ul class="seller-info-list list-style-none">
-                                <li class="store-address">
-                                    <i class="w-icon-map-marker"></i>
-                                    <p>
-                                        908 New Hampshire Avenue #100,
-                                        Washington, United States
-                                    </p>
-                                </li>
-                                <li class="store-rating">
-                                    <div class="ratings-container">
-                                        <div class="ratings-full">
-                                            <span class="ratings" style="width: 100%;"></span>
-                                            <span class="tooltiptext tooltip-top"></span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Store -->
-            </div>
-            <div class="store-wrap mb-4">
-                <div class="store store-wcmp br-sm">
-                    <figure class="store-banner">
-                        <img src="~/Content/assets\images\vendor\wcmp\5.jpg" alt="Vendor" width="400" height="318" style="background-color: #27282c;">
-                    </figure>
-                    <div class="store-content">
-                        <figure class="seller-brand">
-                            <img src="~/Content/assets\images\vendor\brand\5.jpg" alt="Brand" width="80" height="80">
-                        </figure>
-                        <div class="seller-date">
-                            <h4 class="store-title">
-                                <a href="vendor-wcmp-store.html">Vendor 5</a>
-                            </h4>
-                            <ul class="seller-info-list list-style-none">
-                                <li class="store-address">
-                                    <i class="w-icon-map-marker"></i>
-                                    <p>
-                                        Fuchu, Hiroshima, Thai Nguyen,
-                                        Hiroshima, Japan,27000
-                                    </p>
-                                </li>
-                                <li class="store-rating">
-                                    <i class="w-icon-star-full"></i>
-                                    <p>No Rating Yet</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Store -->
-            </div>
-            <div class="store-wrap mb-4">
-                <div class="store store-wcmp br-sm">
-                    <figure class="store-banner">
-                        <img src="~/Content/assets\images\vendor\wcmp\6.jpg" alt="Vendor" width="400" height="318" style="background-color: #a387b8;">
-                    </figure>
-                    <div class="store-content">
-                        <figure class="seller-brand">
-                            <img src="~/Content/assets\images\vendor\brand\6.jpg" alt="Brand" width="80" height="80">
-                        </figure>
-                        <div class="seller-date">
-                            <h4 class="store-title">
-                                <a href="vendor-wcmp-store.html">Vendor 6</a>
-                            </h4>
-                            <ul class="seller-info-list list-style-none">
-                                <li class="store-address">
-                                    <i class="w-icon-map-marker"></i>
-                                    <p>
-                                        848 Baker Rd, Huntsville, AL 35803,
-                                        Minato, Tokyo, Japan, 12000
-                                    </p>
-                                </li>
-                                <li class="store-rating">
-                                    <i class="w-icon-star-full"></i>
-                                    <p>No Rating Yet</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Store -->
             </div>
         </div>
-        <!-- End of Vendor Store -->
+        <!-- End of Store -->
+    </div>
+    <div class="store-wrap mb-4">
+        <div class="store store-wcmp br-sm">
+            <figure class="store-banner">
+                <img src="~/Content/assets\images\vendor\wcmp\4.jpg" alt="Vendor" width="400" height="318" style="background-color: #585e65;">
+            </figure>
+            <div class="store-content">
+                <figure class="seller-brand">
+                    <img src="~/Content/assets\images\vendor\brand\4.jpg" alt="Brand" width="80" height="80">
+                </figure>
+                <div class="seller-date">
+                    <h4 class="store-title">
+                        <a href="vendor-wcmp-store.html">Vendor 4</a>
+                    </h4>
+                    <ul class="seller-info-list list-style-none">
+                        <li class="store-address">
+                            <i class="w-icon-map-marker"></i>
+                            <p>
+                                908 New Hampshire Avenue #100,
+                                Washington, United States
+                            </p>
+                        </li>
+                        <li class="store-rating">
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width: 100%;"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Store -->
+    </div>
+    <div class="store-wrap mb-4">
+        <div class="store store-wcmp br-sm">
+            <figure class="store-banner">
+                <img src="~/Content/assets\images\vendor\wcmp\5.jpg" alt="Vendor" width="400" height="318" style="background-color: #27282c;">
+            </figure>
+            <div class="store-content">
+                <figure class="seller-brand">
+                    <img src="~/Content/assets\images\vendor\brand\5.jpg" alt="Brand" width="80" height="80">
+                </figure>
+                <div class="seller-date">
+                    <h4 class="store-title">
+                        <a href="vendor-wcmp-store.html">Vendor 5</a>
+                    </h4>
+                    <ul class="seller-info-list list-style-none">
+                        <li class="store-address">
+                            <i class="w-icon-map-marker"></i>
+                            <p>
+                                Fuchu, Hiroshima, Thai Nguyen,
+                                Hiroshima, Japan,27000
+                            </p>
+                        </li>
+                        <li class="store-rating">
+                            <i class="w-icon-star-full"></i>
+                            <p>No Rating Yet</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Store -->
+    </div>
+    <div class="store-wrap mb-4">
+        <div class="store store-wcmp br-sm">
+            <figure class="store-banner">
+                <img src="~/Content/assets\images\vendor\wcmp\6.jpg" alt="Vendor" width="400" height="318" style="background-color: #a387b8;">
+            </figure>
+            <div class="store-content">
+                <figure class="seller-brand">
+                    <img src="~/Content/assets\images\vendor\brand\6.jpg" alt="Brand" width="80" height="80">
+                </figure>
+                <div class="seller-date">
+                    <h4 class="store-title">
+                        <a href="vendor-wcmp-store.html">Vendor 6</a>
+                    </h4>
+                    <ul class="seller-info-list list-style-none">
+                        <li class="store-address">
+                            <i class="w-icon-map-marker"></i>
+                            <p>
+                                848 Baker Rd, Huntsville, AL 35803,
+                                Minato, Tokyo, Japan, 12000
+                            </p>
+                        </li>
+                        <li class="store-rating">
+                            <i class="w-icon-star-full"></i>
+                            <p>No Rating Yet</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Store -->
     </div>
 </div>
+<!-- End of Vendor Store -->

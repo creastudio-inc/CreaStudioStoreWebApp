@@ -1,1045 +1,1024 @@
 ﻿
 @{
     ViewBag.Title = "Show";
+    ViewBag.PageHeader = "Vendor Show";
+
 }
 
-<!-- Start of Page Header -->
-<div class="page-header">
-    <div class="container">
-        <h1 class="page-title mb-0">Vendors Show</h1>
+
+<div class="store store-wcfm-banner">
+    <figure class="store-media">
+        <img src="~/Content/assets\images\vendor\wcfm\1.jpg" alt="Vendor" width="1240" height="460" style="background-color: #40475e;">
+    </figure>
+    <div class="store-content">
+        <div class="store-content-left mr-auto">
+            <div class="personal-info">
+                <figure class="seller-brand">
+                    <img src="~/Content/assets\images\vendor\brand\2-100x100.png" alt="Brand" width="100" height="100">
+                </figure>
+                <div class="ratings-container">
+                    <div class="ratings-full">
+                        <span class="ratings" style="width: 100%;"></span>
+                        <span class="tooltiptext tooltip-top"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="address-info">
+                <h4 class="store-title">Vendor 1</h4>
+                <ul class="seller-info-list list-style-none">
+                    <li class="store-address">
+                        <i class="w-icon-map-marker"></i>
+                        Street1, Street2, Great Area, California, United States (US), 92090El
+                        Carjon,
+                    </li>
+                    <li class="store-phone">
+                        <a href="tel:123456789">
+                            <i class="w-icon-phone"></i>
+                            0(800)123-456
+                        </a>
+                    </li>
+                    <li class="store-email">
+                        <a href="email:#">
+                            <i class="far fa-envelope"></i>
+                            wc@vendor.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="store-content-right">
+            <div class="btn btn-white btn-rounded btn-icon-left btn-inquiry"><i class="far fa-question-circle"></i>Inquiry</div>
+            <div class="social-icons social-icons-colored border-thin">
+                <a href="#" class="social-icon social-facebook w-icon-facebook"></a>
+                <a href="#" class="social-icon social-twitter w-icon-twitter"></a>
+                <a href="#" class="social-icon social-linkedin fab fa-linkedin"></a>
+                <a href="#" class="social-icon social-youtube w-icon-youtube"></a>
+                <a href="#" class="social-icon social-instagram w-icon-instagram"></a>
+            </div>
+        </div>
     </div>
 </div>
-<!-- End of Page Header -->
-<!-- Start of Breadcrumb -->
-<nav class="breadcrumb-nav">
-    <div class="container">
-        <ul class="breadcrumb bb-no">
-            <li><a href="demo1.html">Home</a></li>
-            <li><a href="#">Vendor</a></li>
-            <li><a href="#">WC Marketplace</a></li>
-            <li>Store List</li>
-        </ul>
-    </div>
-</nav>
-<!-- End of Breadcrumb -->
+<!-- End of Store WCMP Banner -->
 
-<div class="page-content mb-8">
-    <div class="container">
-        <div class="store store-wcfm-banner">
-            <figure class="store-media">
-                <img  src="~/Content/assets\images\vendor\wcfm\1.jpg" alt="Vendor" width="1240" height="460" style="background-color: #40475e;">
-            </figure>
-            <div class="store-content">
-                <div class="store-content-left mr-auto">
-                    <div class="personal-info">
-                        <figure class="seller-brand">
-                            <img  src="~/Content/assets\images\vendor\brand\2-100x100.png" alt="Brand" width="100" height="100">
-                        </figure>
-                        <div class="ratings-container">
-                            <div class="ratings-full">
-                                <span class="ratings" style="width: 100%;"></span>
-                                <span class="tooltiptext tooltip-top"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="address-info">
-                        <h4 class="store-title">Vendor 1</h4>
-                        <ul class="seller-info-list list-style-none">
-                            <li class="store-address">
-                                <i class="w-icon-map-marker"></i>
-                                Street1, Street2, Great Area, California, United States (US), 92090El
-                                Carjon,
+<div class="row gutter-lg">
+    <aside class="sidebar left-sidebar vendor-sidebar sticky-sidebar-wrapper sidebar-fixed">
+        <!-- Start of Sidebar Overlay -->
+        <div class="sidebar-overlay"></div>
+        <a class="sidebar-close" href="#"><i class="close-icon"></i></a>
+        <a href="#" class="sidebar-toggle"><i class="w-icon-angle-right"></i></a>
+        <div class="sidebar-content">
+            <div class="pin-wrapper" style="height: 1742.31px;">
+                <div class="sticky-sidebar" style="border-bottom: 0px none rgb(102, 102, 102); width: 280px;">
+                    <div class="widget widget-collapsible widget-categories">
+                        <h3 class="widget-title"><span>All Categories</span><span class="toggle-btn"></span></h3>
+                        <ul class="widget-body filter-items search-ul">
+                            <li class="with-ul">
+                                <a href="#">Clothing<i class="la la-angle-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Men's</a></li>
+                                </ul>
                             </li>
-                            <li class="store-phone">
-                                <a href="tel:123456789">
-                                    <i class="w-icon-phone"></i>
-                                    0(800)123-456
-                                </a>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Healthy &amp; Beauty</a></li>
+                            <li><a href="#">Home &amp; Kitchen</a></li>
+                            <li class="with-ul">
+                                <a href="#">Jewelry &amp; Watch<i class="la la-angle-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Smart Watch</a></li>
+                                    <li><a href="#">Watch</a></li>
+                                </ul>
                             </li>
-                            <li class="store-email">
-                                <a href="email:#">
-                                    <i class="far fa-envelope"></i>
-                                    wc@vendor.com
-                                </a>
+                            <li class="with-ul">
+                                <a href="#">Office Electronics<i class="la la-angle-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="store-content-right">
-                    <div class="btn btn-white btn-rounded btn-icon-left btn-inquiry"><i class="far fa-question-circle"></i>Inquiry</div>
-                    <div class="social-icons social-icons-colored border-thin">
-                        <a href="#" class="social-icon social-facebook w-icon-facebook"></a>
-                        <a href="#" class="social-icon social-twitter w-icon-twitter"></a>
-                        <a href="#" class="social-icon social-linkedin fab fa-linkedin"></a>
-                        <a href="#" class="social-icon social-youtube w-icon-youtube"></a>
-                        <a href="#" class="social-icon social-instagram w-icon-instagram"></a>
+                    <!-- End of Widget -->
+                    <div class="widget widget-collapsible widget-coupons">
+                        <h3 class="widget-title"><span>Store Coupons</span><span class="toggle-btn"></span></h3>
+                        <div class="widget-body">
+                            <div class="coupon">
+                                First Shopping Coupon
+                                <div class="coupon-tip">
+                                    <div class="coupon-info-title">FREE Shipping Coupon</div>
+                                    <div class="coupon-info-date">April 30, 2021</div>
+                                    <div>Test coupon for vendor page</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!-- End of Widget -->
+                    <div class="widget widget-collapsible widget-time">
+                        <h3 class="widget-title">
+                            <span><i class="far fa-clock"></i>Store Time</span>
+                            <span class="toggle-btn"></span>
+                        </h3>
+                        <ul class="widget-body">
+                            <li>
+                                <span>Monday:</span>9:00 - 10:00 pm
+                            </li>
+                            <li>
+                                <span>Tuesday:</span>9:00 - 10:00 pm
+                            </li>
+                            <li>
+                                <span>Wednesday:</span>9:00 - 10:00 pm
+                            </li>
+                            <li>
+                                <span>Thursday:</span>9:00 - 2:00 pm
+                            </li>
+                            <li>
+                                <span>Friday:</span>9:00 - 10:00 pm
+                            </li>
+                            <li>
+                                <span>Saturday:</span>9:00 - 10:00 pm
+                            </li>
+                            <li>
+                                <span>Sunday:</span>9:00 - 10:00 pm
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End of Widget -->
+                    <div class="widget widget-collapsible">
+                        <h3 class="widget-title">
+                            <span><i class="w-icon-truck"></i>Shipping Rules</span>
+                            <span class="toggle-btn"></span>
+                        </h3>
+                        <div class="widget-body">
+                            <p class="mb-0">Delivery Time: 1-2 business days</p>
+                        </div>
+                    </div>
+                    <!-- End of Widget -->
+                    <div class="widget widget-collapsible widget-location">
+                        <h3 class="widget-title"><span>Store Location</span><span class="toggle-btn"></span></h3>
+                        <div class="widget-body">
+                            <div class="google-map" id="googlemaps" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div><button draggable="false" aria-label="Raccourcis clavier" title="Raccourcis clavier" type="button" style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; left: -100000px; top: -100000px;"></button></div><div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -50, -183);"><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -50, -183);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -50, -183);"><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i603!3i770!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=26313" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i602!3i770!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=26162" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i602!3i769!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=104781" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i603!3i769!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=104932" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe><div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div><div></div><div></div><div></div><div></div><div><button draggable="false" aria-label="Passer en plein écran" title="Passer en plein écran" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; display: none; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div><div></div><div></div><div></div><div></div><div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40" controlheight="81" style="margin: 10px; user-select: none; position: absolute; bottom: 95px; right: 40px;"><div class="gmnoprint" controlwidth="40" controlheight="81" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button draggable="false" aria-label="Zoom avant" title="Zoom avant" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" aria-label="Zoom arrière" title="Zoom arrière" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div></div></div></div><div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=40.75198,-73.96978&amp;z=11&amp;t=m&amp;hl=fr-FR&amp;gl=US&amp;mapclient=apiv3" title="Ouvrir cette zone dans Google&nbsp;Maps (dans une nouvelle fenêtre)" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div></div><div></div><div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 314px; bottom: 0px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Raccourcis clavier" title="Raccourcis clavier" type="button" style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2010%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M1.5%200C.671573%200%200%20.671573%200%201.5v7C0%209.32843.671573%2010%201.5%2010h13C15.3284%2010%2016%209.32843%2016%208.5v-7C16%20.671573%2015.3284%200%2014.5%200h-13zM5%207C4.44772%207%204%207.44772%204%208%204%208.55229%204.44772%209%205%209h6C11.5523%209%2012%208.55229%2012%208%2012%207.44772%2011.5523%207%2011%207H5zM1%204.25c0-.13807.11193-.25.25-.25h1.5c.13807%200%20.25.11193.25.25v1.5c0%20.13807-.11193.25-.25.25H1.5C1.22386%206%201%205.77614%201%205.5V4.25zM1.5%201c-.27614%200-.5.22386-.5.5v1.25c0%20.13807.11193.25.25.25h1.5c.13807%200%20.25-.11193.25-.25v-1.5C3%201.11193%202.88807%201%202.75%201H1.5zM4%204.25c0-.13807.11193-.25.25-.25h1.5c.13807%200%20.25.11193.25.25v1.5c0%20.13807-.11193.25-.25.25h-1.5C4.11193%206%204%205.88807%204%205.75v-1.5zM4.25%201c-.13807%200-.25.11193-.25.25v1.5c0%20.13807.11193.25.25.25h1.5c.13807%200%20.25-.11193.25-.25v-1.5C6%201.11193%205.88807%201%205.75%201h-1.5zM7%204.25c0-.13807.11193-.25.25-.25h1.5C8.88807%204%209%204.11193%209%204.25v1.5C9%205.88807%208.88807%206%208.75%206h-1.5C7.11193%206%207%205.88807%207%205.75v-1.5zM7.25%201c-.13807%200-.25.11193-.25.25v1.5c0%20.13807.11193.25.25.25h1.5C8.88807%203%209%202.88807%209%202.75v-1.5C9%201.11193%208.88807%201%208.75%201h-1.5zM10%204.25C10%204.11193%2010.1119%204%2010.25%204h1.5C11.8881%204%2012%204.11193%2012%204.25v1.5C12%205.88807%2011.8881%206%2011.75%206h-1.5C10.1119%206%2010%205.88807%2010%205.75v-1.5zM10.25%201C10.1119%201%2010%201.11193%2010%201.25v1.5C10%202.88807%2010.1119%203%2010.25%203h1.5C11.8881%203%2012%202.88807%2012%202.75v-1.5C12%201.11193%2011.8881%201%2011.75%201h-1.5zM13%204.25C13%204.11193%2013.1119%204%2013.25%204h1.5C14.8881%204%2015%204.11193%2015%204.25V5.5C15%205.77614%2014.7761%206%2014.5%206h-1.25C13.1119%206%2013%205.88807%2013%205.75v-1.5zM13.25%201C13.1119%201%2013%201.11193%2013%201.25v1.5C13%202.88807%2013.1119%203%2013.25%203h1.5C14.8881%203%2015%202.88807%2015%202.75V1.5C15%201.22386%2014.7761%201%2014.5%201h-1.25z%22%20fill%3D%22%233C4043%22/%3E%3C/svg%3E" alt="" style="height: 10px; width: 16px; vertical-align: middle;"></button></div></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 188px; bottom: 0px; width: 126px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Données cartographiques" title="Données cartographiques" type="button" style="background: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Données cartographiques</button><span style="display: none;">Données cartographiques ©2021 Google</span></div></div></div><div draggable="false" class="gm-style-cc" style="position: absolute; user-select: none; height: 14px; line-height: 14px; right: 113px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><span>2 km&nbsp;</span><div style="position: relative; display: inline-block; height: 8px; bottom: -1px; width: 39px;"><div style="width: 100%; height: 4px; position: absolute; left: 0px; top: 0px;"></div><div style="width: 4px; height: 8px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"></div><div style="width: 4px; height: 8px; position: absolute; background-color: rgb(255, 255, 255); right: 0px; bottom: 0px;"></div><div style="position: absolute; background-color: rgb(102, 102, 102); height: 2px; left: 1px; bottom: 1px; right: 1px;"></div><div style="position: absolute; width: 2px; height: 6px; left: 1px; top: 1px; background-color: rgb(102, 102, 102);"></div><div style="width: 2px; height: 6px; position: absolute; background-color: rgb(102, 102, 102); bottom: 1px; right: 1px;"></div></div></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/fr-FR_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Conditions d'utilisation</a></div></div><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Signaler à Google une erreur dans la carte routière ou les images" dir="ltr" href="https://www.google.com/maps/40.75198,-73.96978,11z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Signaler une erreur cartographique</a></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Données cartographiques ©2021 Google</div></div></div></div></div><div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"><div><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg" draggable="false" style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;"></div><div style="line-height: 20px; margin: 15px 0px;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">Impossible de charger Google&nbsp;Maps correctement sur cette page.</span></div><table style="width: 100%;"><tr><td style="line-height: 16px; vertical-align: middle;"><a href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors" target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Ce site Web vous appartient&nbsp;?</a></td><td style="text-align: right;"><button class="dismissButton">OK</button></td></tr></table></div></div>
+                        </div>
+                    </div>
+                    <!-- End of Widget -->
+                    <div class="widget widget-collapsible widget-products">
+                        <h3 class="widget-title"><span>Best Selling</span><span class="toggle-btn"></span></h3>
+                        <div class="widget-body">
+                            <div class="product product-widget">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\1.jpg" alt="Product" width="100" height="106">
+                                    </a>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">3D Television</a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">$220.00</div>
+                                </div>
+                            </div>
+                            <div class="product product-widget">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\2-1.jpg" alt="Product" width="100" height="106">
+                                    </a>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">Alarm Clock With Lamp</a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <ins class="new-price">$30.00</ins><del class="old-price">$60.00</del>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product-widget">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\3.jpg" alt="Product" width="100" height="106">
+                                    </a>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">Apple Laptop</a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">$1,000.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Widget -->
                 </div>
             </div>
         </div>
-        <!-- End of Store WCMP Banner -->
+    </aside>
+    <!-- End of Sidebar -->
 
-        <div class="row gutter-lg">
-            <aside class="sidebar left-sidebar vendor-sidebar sticky-sidebar-wrapper sidebar-fixed">
-                <!-- Start of Sidebar Overlay -->
-                <div class="sidebar-overlay"></div>
-                <a class="sidebar-close" href="#"><i class="close-icon"></i></a>
-                <a href="#" class="sidebar-toggle"><i class="w-icon-angle-right"></i></a>
-                <div class="sidebar-content">
-                    <div class="pin-wrapper" style="height: 1742.31px;">
-                        <div class="sticky-sidebar" style="border-bottom: 0px none rgb(102, 102, 102); width: 280px;">
-                            <div class="widget widget-collapsible widget-categories">
-                                <h3 class="widget-title"><span>All Categories</span><span class="toggle-btn"></span></h3>
-                                <ul class="widget-body filter-items search-ul">
-                                    <li class="with-ul">
-                                        <a href="#">Clothing<i class="la la-angle-down"></i></a>
-                                        <ul>
-                                            <li><a href="#">Men's</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Fashion</a></li>
-                                    <li><a href="#">Healthy &amp; Beauty</a></li>
-                                    <li><a href="#">Home &amp; Kitchen</a></li>
-                                    <li class="with-ul">
-                                        <a href="#">Jewelry &amp; Watch<i class="la la-angle-down"></i></a>
-                                        <ul>
-                                            <li><a href="#">Smart Watch</a></li>
-                                            <li><a href="#">Watch</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="with-ul">
-                                        <a href="#">Office Electronics<i class="la la-angle-down"></i></a>
-                                        <ul>
-                                            <li><a href="#">Accessories</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+    <div class="main-content">
+        <div class="tab tab-nav-underline tab-nav-boxed tab-vendor-wcfm">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#tab-1" class="nav-link active">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab-2" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab-3" class="nav-link">Policies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab-4" class="nav-link">Reviews(1)</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab-1">
+                    <nav class="toolbox sticky-toolbox sticky-content fix-top">
+                        <div class="toolbox-left">
+                            <div class="toolbox-item toolbox-sort select-box text-dark">
+                                <label>Sort By :</label>
+                                <select name="orderby" class="form-control">
+                                    <option value="default" selected="selected">
+                                        Default sorting
+                                    </option>
+                                    <option value="popularity">Sort by popularity</option>
+                                    <option value="rating">Sort by average rating</option>
+                                    <option value="date">Sort by latest</option>
+                                    <option value="price-low">Sort by pric: low to high</option>
+                                    <option value="price-high">Sort by price: high to low</option>
+                                </select>
                             </div>
-                            <!-- End of Widget -->
-                            <div class="widget widget-collapsible widget-coupons">
-                                <h3 class="widget-title"><span>Store Coupons</span><span class="toggle-btn"></span></h3>
-                                <div class="widget-body">
-                                    <div class="coupon">
-                                        First Shopping Coupon
-                                        <div class="coupon-tip">
-                                            <div class="coupon-info-title">FREE Shipping Coupon</div>
-                                            <div class="coupon-info-date">April 30, 2021</div>
-                                            <div>Test coupon for vendor page</div>
-                                        </div>
+                        </div>
+                        <div class="toolbox-right">
+                            <div class="toolbox-item toolbox-show select-box">
+                                <select name="count" class="form-control">
+                                    <option value="9">Show 9</option>
+                                    <option value="12" selected="selected">Show 12</option>
+                                    <option value="24">Show 24</option>
+                                    <option value="36">Show 36</option>
+                                </select>
+                            </div>
+                            <div class="toolbox-item toolbox-layout">
+                                <a href="vendor-wcfm-store-product-grid.html" class="icon-mode-grid btn-layout active">
+                                    <i class="w-icon-grid"></i>
+                                </a>
+                                <a href="vendor-wcfm-store-product-list.html" class="icon-mode-list btn-layout">
+                                    <i class="w-icon-list"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="product-wrapper row cols-md-3 cols-sm-2 cols-2">
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\1.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- End of Widget -->
-                            <div class="widget widget-collapsible widget-time">
-                                <h3 class="widget-title">
-                                    <span><i class="far fa-clock"></i>Store Time</span>
-                                    <span class="toggle-btn"></span>
-                                </h3>
-                                <ul class="widget-body">
-                                    <li>
-                                        <span>Monday:</span>9:00 - 10:00 pm
-                                    </li>
-                                    <li>
-                                        <span>Tuesday:</span>9:00 - 10:00 pm
-                                    </li>
-                                    <li>
-                                        <span>Wednesday:</span>9:00 - 10:00 pm
-                                    </li>
-                                    <li>
-                                        <span>Thursday:</span>9:00 - 2:00 pm
-                                    </li>
-                                    <li>
-                                        <span>Friday:</span>9:00 - 10:00 pm
-                                    </li>
-                                    <li>
-                                        <span>Saturday:</span>9:00 - 10:00 pm
-                                    </li>
-                                    <li>
-                                        <span>Sunday:</span>9:00 - 10:00 pm
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End of Widget -->
-                            <div class="widget widget-collapsible">
-                                <h3 class="widget-title">
-                                    <span><i class="w-icon-truck"></i>Shipping Rules</span>
-                                    <span class="toggle-btn"></span>
-                                </h3>
-                                <div class="widget-body">
-                                    <p class="mb-0">Delivery Time: 1-2 business days</p>
-                                </div>
-                            </div>
-                            <!-- End of Widget -->
-                            <div class="widget widget-collapsible widget-location">
-                                <h3 class="widget-title"><span>Store Location</span><span class="toggle-btn"></span></h3>
-                                <div class="widget-body">
-                                    <div class="google-map" id="googlemaps" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div><button draggable="false" aria-label="Raccourcis clavier" title="Raccourcis clavier" type="button" style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; left: -100000px; top: -100000px;"></button></div><div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -50, -183);"><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -50, -183);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 989; transform: matrix(1, 0, 0, 1, -50, -183);"><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i603!3i770!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=26313" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i602!3i770!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=26162" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i602!3i769!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=104781" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i603!3i769!4i256!2m3!1e0!2sm!3i565291680!2m3!1e2!6m1!3e5!3m17!2sfr-FR!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;token=104932" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe><div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div><div></div><div></div><div></div><div></div><div><button draggable="false" aria-label="Passer en plein écran" title="Passer en plein écran" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; display: none; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div><div></div><div></div><div></div><div></div><div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40" controlheight="81" style="margin: 10px; user-select: none; position: absolute; bottom: 95px; right: 40px;"><div class="gmnoprint" controlwidth="40" controlheight="81" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button draggable="false" aria-label="Zoom avant" title="Zoom avant" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" aria-label="Zoom arrière" title="Zoom arrière" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div></div></div></div><div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=40.75198,-73.96978&amp;z=11&amp;t=m&amp;hl=fr-FR&amp;gl=US&amp;mapclient=apiv3" title="Ouvrir cette zone dans Google&nbsp;Maps (dans une nouvelle fenêtre)" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div></div><div></div><div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 314px; bottom: 0px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Raccourcis clavier" title="Raccourcis clavier" type="button" style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;"><img src="data:image/svg+xml,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2010%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M1.5%200C.671573%200%200%20.671573%200%201.5v7C0%209.32843.671573%2010%201.5%2010h13C15.3284%2010%2016%209.32843%2016%208.5v-7C16%20.671573%2015.3284%200%2014.5%200h-13zM5%207C4.44772%207%204%207.44772%204%208%204%208.55229%204.44772%209%205%209h6C11.5523%209%2012%208.55229%2012%208%2012%207.44772%2011.5523%207%2011%207H5zM1%204.25c0-.13807.11193-.25.25-.25h1.5c.13807%200%20.25.11193.25.25v1.5c0%20.13807-.11193.25-.25.25H1.5C1.22386%206%201%205.77614%201%205.5V4.25zM1.5%201c-.27614%200-.5.22386-.5.5v1.25c0%20.13807.11193.25.25.25h1.5c.13807%200%20.25-.11193.25-.25v-1.5C3%201.11193%202.88807%201%202.75%201H1.5zM4%204.25c0-.13807.11193-.25.25-.25h1.5c.13807%200%20.25.11193.25.25v1.5c0%20.13807-.11193.25-.25.25h-1.5C4.11193%206%204%205.88807%204%205.75v-1.5zM4.25%201c-.13807%200-.25.11193-.25.25v1.5c0%20.13807.11193.25.25.25h1.5c.13807%200%20.25-.11193.25-.25v-1.5C6%201.11193%205.88807%201%205.75%201h-1.5zM7%204.25c0-.13807.11193-.25.25-.25h1.5C8.88807%204%209%204.11193%209%204.25v1.5C9%205.88807%208.88807%206%208.75%206h-1.5C7.11193%206%207%205.88807%207%205.75v-1.5zM7.25%201c-.13807%200-.25.11193-.25.25v1.5c0%20.13807.11193.25.25.25h1.5C8.88807%203%209%202.88807%209%202.75v-1.5C9%201.11193%208.88807%201%208.75%201h-1.5zM10%204.25C10%204.11193%2010.1119%204%2010.25%204h1.5C11.8881%204%2012%204.11193%2012%204.25v1.5C12%205.88807%2011.8881%206%2011.75%206h-1.5C10.1119%206%2010%205.88807%2010%205.75v-1.5zM10.25%201C10.1119%201%2010%201.11193%2010%201.25v1.5C10%202.88807%2010.1119%203%2010.25%203h1.5C11.8881%203%2012%202.88807%2012%202.75v-1.5C12%201.11193%2011.8881%201%2011.75%201h-1.5zM13%204.25C13%204.11193%2013.1119%204%2013.25%204h1.5C14.8881%204%2015%204.11193%2015%204.25V5.5C15%205.77614%2014.7761%206%2014.5%206h-1.25C13.1119%206%2013%205.88807%2013%205.75v-1.5zM13.25%201C13.1119%201%2013%201.11193%2013%201.25v1.5C13%202.88807%2013.1119%203%2013.25%203h1.5C14.8881%203%2015%202.88807%2015%202.75V1.5C15%201.22386%2014.7761%201%2014.5%201h-1.25z%22%20fill%3D%22%233C4043%22/%3E%3C/svg%3E" alt="" style="height: 10px; width: 16px; vertical-align: middle;"></button></div></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 188px; bottom: 0px; width: 126px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Données cartographiques" title="Données cartographiques" type="button" style="background: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: normal;">Données cartographiques</button><span style="display: none;">Données cartographiques ©2021 Google</span></div></div></div><div draggable="false" class="gm-style-cc" style="position: absolute; user-select: none; height: 14px; line-height: 14px; right: 113px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><span>2 km&nbsp;</span><div style="position: relative; display: inline-block; height: 8px; bottom: -1px; width: 39px;"><div style="width: 100%; height: 4px; position: absolute; left: 0px; top: 0px;"></div><div style="width: 4px; height: 8px; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"></div><div style="width: 4px; height: 8px; position: absolute; background-color: rgb(255, 255, 255); right: 0px; bottom: 0px;"></div><div style="position: absolute; background-color: rgb(102, 102, 102); height: 2px; left: 1px; bottom: 1px; right: 1px;"></div><div style="position: absolute; width: 2px; height: 6px; left: 1px; top: 1px; background-color: rgb(102, 102, 102);"></div><div style="width: 2px; height: 6px; position: absolute; background-color: rgb(102, 102, 102); bottom: 1px; right: 1px;"></div></div></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/fr-FR_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Conditions d'utilisation</a></div></div><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Signaler à Google une erreur dans la carte routière ou les images" dir="ltr" href="https://www.google.com/maps/40.75198,-73.96978,11z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Signaler une erreur cartographique</a></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Données cartographiques ©2021 Google</div></div></div></div></div><div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"><div><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg" draggable="false" style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;"></div><div style="line-height: 20px; margin: 15px 0px;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">Impossible de charger Google&nbsp;Maps correctement sur cette page.</span></div><table style="width: 100%;"><tr><td style="line-height: 16px; vertical-align: middle;"><a href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors" target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Ce site Web vous appartient&nbsp;?</a></td><td style="text-align: right;"><button class="dismissButton">OK</button></td></tr></table></div></div>
-                                </div>
-                            </div>
-                            <!-- End of Widget -->
-                            <div class="widget widget-collapsible widget-products">
-                                <h3 class="widget-title"><span>Best Selling</span><span class="toggle-btn"></span></h3>
-                                <div class="widget-body">
-                                    <div class="product product-widget">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\1.jpg" alt="Product" width="100" height="106">
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            3D
+                                            Television
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (3
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$220.00 - $230.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
                                             </a>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">3D Television</a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                            </div>
-                                            <div class="product-price">$220.00</div>
-                                        </div>
-                                    </div>
-                                    <div class="product product-widget">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\2-1.jpg" alt="Product" width="100" height="106">
-                                            </a>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">Alarm Clock With Lamp</a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                            </div>
-                                            <div class="product-price">
-                                                <ins class="new-price">$30.00</ins><del class="old-price">$60.00</del>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product product-widget">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\3.jpg" alt="Product" width="100" height="106">
-                                            </a>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">Apple Laptop</a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                            </div>
-                                            <div class="product-price">$1,000.00</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End of Widget -->
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\2-1.jpg" alt="Product" width="300" height="338">
+                                        <img src="~/Content/assets\images\shop\2-2.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Alarm
+                                            Clock With Lamp
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (10
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">
+                                            <ins class="new-price">$30.00</ins><del class="old-price">$60.00</del>
+                                        </div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\3.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Apple
+                                            Laptop
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 80%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (5
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$1,000.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\4.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">Attachable Charge Alarm</a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 60%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (7
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$15.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\5.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Best
+                                            Travel Bag
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 80%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (4
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$83.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\6.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Black
+                                            Stunt Motor
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (12
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$374.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\7-1.jpg" alt="Product" width="300" height="338">
+                                        <img src="~/Content/assets\images\shop\7-2.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Blue Sky
+                                            Trunk
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (9
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$85.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\8.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Bodycare
+                                            Smooth Powder
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 60%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (4
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$25.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\9.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Bright
+                                            Green IPhone
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 80%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (4
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$950.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\10.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Cavin
+                                            Fashion Suede Handbag
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 80%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (4
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$163.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\11-1.jpg" alt="Product" width="300" height="338">
+                                        <img src="~/Content/assets\images\shop\11-2.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Charming
+                                            Design Watch
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (10
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$30.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-wrap">
+                            <div class="product product-simple text-center">
+                                <figure class="product-media">
+                                    <a href="product-default.html">
+                                        <img src="~/Content/assets\images\shop\12.jpg" alt="Product" width="300" height="338">
+                                    </a>
+                                    <div class="product-action-vertical">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                                    </div>
+                                    <div class="product-action">
+                                        <a href="#" class="btn-product btn-quickview" title="Quick View">
+                                            Quick
+                                            View
+                                        </a>
+                                    </div>
+                                </figure>
+                                <div class="product-details">
+                                    <h4 class="product-name">
+                                        <a href="product-default.html">
+                                            Classic
+                                            Simple Backpack
+                                        </a>
+                                    </h4>
+                                    <div class="ratings-container">
+                                        <div class="ratings-full">
+                                            <span class="ratings" style="width: 100%;"></span>
+                                            <span class="tooltiptext tooltip-top"></span>
+                                        </div>
+                                        <a href="product-default.html" class="rating-reviews">
+                                            (9
+                                            reviews)
+                                        </a>
+                                    </div>
+                                    <div class="product-pa-wrapper">
+                                        <div class="product-price">$85.00</div>
+                                        <div class="product-action">
+                                            <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
+                                                Add
+                                                To Cart
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </aside>
-            <!-- End of Sidebar -->
-
-            <div class="main-content">
-                <div class="tab tab-nav-underline tab-nav-boxed tab-vendor-wcfm">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a href="#tab-1" class="nav-link active">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#tab-2" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#tab-3" class="nav-link">Policies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#tab-4" class="nav-link">Reviews(1)</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab-1">
-                            <nav class="toolbox sticky-toolbox sticky-content fix-top">
-                                <div class="toolbox-left">
-                                    <div class="toolbox-item toolbox-sort select-box text-dark">
-                                        <label>Sort By :</label>
-                                        <select name="orderby" class="form-control">
-                                            <option value="default" selected="selected">
-                                                Default sorting
-                                            </option>
-                                            <option value="popularity">Sort by popularity</option>
-                                            <option value="rating">Sort by average rating</option>
-                                            <option value="date">Sort by latest</option>
-                                            <option value="price-low">Sort by pric: low to high</option>
-                                            <option value="price-high">Sort by price: high to low</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="toolbox-right">
-                                    <div class="toolbox-item toolbox-show select-box">
-                                        <select name="count" class="form-control">
-                                            <option value="9">Show 9</option>
-                                            <option value="12" selected="selected">Show 12</option>
-                                            <option value="24">Show 24</option>
-                                            <option value="36">Show 36</option>
-                                        </select>
-                                    </div>
-                                    <div class="toolbox-item toolbox-layout">
-                                        <a href="vendor-wcfm-store-product-grid.html" class="icon-mode-grid btn-layout active">
-                                            <i class="w-icon-grid"></i>
-                                        </a>
-                                        <a href="vendor-wcfm-store-product-list.html" class="icon-mode-list btn-layout">
-                                            <i class="w-icon-list"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </nav>
-                            <div class="product-wrapper row cols-md-3 cols-sm-2 cols-2">
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\1.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    3D
-                                                    Television
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (3
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$220.00 - $230.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\2-1.jpg" alt="Product" width="300" height="338">
-                                                <img  src="~/Content/assets\images\shop\2-2.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Alarm
-                                                    Clock With Lamp
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (10
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">
-                                                    <ins class="new-price">$30.00</ins><del class="old-price">$60.00</del>
-                                                </div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\3.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Apple
-                                                    Laptop
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 80%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (5
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$1,000.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\4.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">Attachable Charge Alarm</a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 60%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (7
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$15.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\5.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Best
-                                                    Travel Bag
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 80%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (4
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$83.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\6.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Black
-                                                    Stunt Motor
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (12
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$374.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\7-1.jpg" alt="Product" width="300" height="338">
-                                                <img  src="~/Content/assets\images\shop\7-2.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Blue Sky
-                                                    Trunk
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (9
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$85.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\8.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Bodycare
-                                                    Smooth Powder
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 60%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (4
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$25.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\9.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Bright
-                                                    Green IPhone
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 80%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (4
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$950.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\10.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Cavin
-                                                    Fashion Suede Handbag
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 80%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (4
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$163.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\11-1.jpg" alt="Product" width="300" height="338">
-                                                <img  src="~/Content/assets\images\shop\11-2.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Charming
-                                                    Design Watch
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (10
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$30.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-wrap">
-                                    <div class="product product-simple text-center">
-                                        <figure class="product-media">
-                                            <a href="product-default.html">
-                                                <img  src="~/Content/assets\images\shop\12.jpg" alt="Product" width="300" height="338">
-                                            </a>
-                                            <div class="product-action-vertical">
-                                                <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
-                                                <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
-                                            </div>
-                                            <div class="product-action">
-                                                <a href="#" class="btn-product btn-quickview" title="Quick View">
-                                                    Quick
-                                                    View
-                                                </a>
-                                            </div>
-                                        </figure>
-                                        <div class="product-details">
-                                            <h4 class="product-name">
-                                                <a href="product-default.html">
-                                                    Classic
-                                                    Simple Backpack
-                                                </a>
-                                            </h4>
-                                            <div class="ratings-container">
-                                                <div class="ratings-full">
-                                                    <span class="ratings" style="width: 100%;"></span>
-                                                    <span class="tooltiptext tooltip-top"></span>
-                                                </div>
-                                                <a href="product-default.html" class="rating-reviews">
-                                                    (9
-                                                    reviews)
-                                                </a>
-                                            </div>
-                                            <div class="product-pa-wrapper">
-                                                <div class="product-price">$85.00</div>
-                                                <div class="product-action">
-                                                    <a href="#" class="btn-cart btn-product btn btn-icon-right btn-link btn-underline">
-                                                        Add
-                                                        To Cart
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab-2">
-                            <p class="mb-4">
-                                <strong>L</strong>orem ipsum dolor sit amet, consectetur
-                                adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Venenatis tellus in metus vulputate eu scelerisque felis. Vel
-                                pretium lectus quam id leo in vitae turpis massa. Nunc id cursus
-                                metus aliquam. Libero id faucibus nisl tincidunt eget. Aliquam
-                                id diam maecenas ultricies mi eget mauris.
-                            </p>
-                            <p>
-                                <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt tellus in metus vulputate eu scelerisque
-                                felis. Vel pretium lectus quam id leo. id faucibus nisl tincidunt eget.
-                                Aliquam id diam maecenas ultricies mi eget mauris. ut labore et dolore magna
-                                aliqua. Venenatis.
-                            </p>
-                        </div>
-                        <div class="tab-pane" id="tab-3">
-                            <div class="policies-area">
-                                <h3 class="title">Shipping Policy</h3>
-                                <p>
-                                    <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt arcu cursus. Sagittis id consectetur
-                                    purus
-                                    ut. Tellus rutrum tellus pelle.
-                                </p>
-                            </div>
-                            <div class="policies-area">
-                                <h3 class="title">Refund Policy</h3>
-                                <p>
-                                    <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt arcu cursus. Sagittis id consectetur
-                                    purus ut. Tellus rutrum tellus pelle.
-                                </p>
-                            </div>
-                            <div class="policies-area">
-                                <h3 class="title text-left">Cancellation / Return / Exchange Policy</h3>
-                                <p>
-                                    <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt arcu cursus. Sagittis id consectetur
-                                    purus ut. Tellus rutrum tellus pelle.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab-4">
-                            <div class="review-area">
-                                <h3 class="title font-weight-bold mb-5">Write A Review</h3>
-                                <input name="review" type="text" class="form-control" placeholder="your review">
-                                <button class="btn btn-rounded">Add Your Review</button>
-                            </div>
-                            <!-- End of Reveiw Area -->
-                            <div class="review-area">
-                                <h3 class="title font-weight-bold mb-5">Reviews</h3>
-                                <div class="reviewers d-flex align-items-center flex-wrap mb-7">
-                                    <div class="reviewers-picture d-flex mr-2">
-                                        <figure>
-                                            <img  src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
-                                        </figure>
-                                        <figure>
-                                            <img  src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
-                                        </figure>
-                                        <figure>
-                                            <img  src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
-                                        </figure>
-                                    </div>
-                                    <div class="reviewer-name">
-                                        <a href="#" class="font-weight-bold mr-1">John Doe</a>has reviewed
-                                        this store
-                                    </div>
-                                </div>
-                                <!-- End of Reviewers -->
-                                <div class="review-ratings">
-                                    <div class="review-ratings-left mr-auto">
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Feature</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Varity</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Flexibility</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Delivery</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Support</label>
-                                        </div>
-                                    </div>
-                                    <!-- End of Review Ratings Left -->
-                                    <div class="review-ratings-right">
-                                        <div class="average-rating">5.0<sub>/5</sub></div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full mr-0">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End of Review Ratings Right -->
-                                </div>
-                                <!-- End of Review Ratings -->
-                                <div class="user-wrap">
-                                    <div class="user-photo">
-                                        <figure>
-                                            <img  src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
-                                        </figure>
-                                        <div class="rated text-center">
-                                            <label>Rated</label>
-                                            <span class="score">5.0</span>
-                                        </div>
-                                    </div>
-                                    <!-- End of User Photo -->
-                                    <div class="user-info">
-                                        <h4 class="user-name">John Doe</h4>
-                                        <div class="user-date mb-7">
-                                            <span>1 Reviews</span>
-                                            <span>April 1, 2021 12:12 Pm</span>
-                                        </div>
-                                        <p>
-                                            Diam in arcu cursus euismod quis. Eget sit amet tellusvitae
-                                            sapien pellentesque habitant morbi tristique senectus et.
-                                            Cras adipiscing enim ermentum et sollicitudin ac orci phasellus.
-                                        </p>
-                                    </div>
-                                    <!-- End of User Info -->
-                                    <div class="review-ratings">
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Feature</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Varity</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Flexibility</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Delivery</label>
-                                        </div>
-                                        <div class="ratings-container">
-                                            <div class="ratings-full">
-                                                <span class="ratings" style="width: 100%;"></span>
-                                            </div>
-                                            <label>5.0 Support</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of User Wrap -->
-                            </div>
-                            <!-- End of Reveiw Area -->
-                        </div>
+                <div class="tab-pane" id="tab-2">
+                    <p class="mb-4">
+                        <strong>L</strong>orem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Venenatis tellus in metus vulputate eu scelerisque felis. Vel
+                        pretium lectus quam id leo in vitae turpis massa. Nunc id cursus
+                        metus aliquam. Libero id faucibus nisl tincidunt eget. Aliquam
+                        id diam maecenas ultricies mi eget mauris.
+                    </p>
+                    <p>
+                        <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt tellus in metus vulputate eu scelerisque
+                        felis. Vel pretium lectus quam id leo. id faucibus nisl tincidunt eget.
+                        Aliquam id diam maecenas ultricies mi eget mauris. ut labore et dolore magna
+                        aliqua. Venenatis.
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                    <div class="policies-area">
+                        <h3 class="title">Shipping Policy</h3>
+                        <p>
+                            <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt arcu cursus. Sagittis id consectetur
+                            purus
+                            ut. Tellus rutrum tellus pelle.
+                        </p>
                     </div>
+                    <div class="policies-area">
+                        <h3 class="title">Refund Policy</h3>
+                        <p>
+                            <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt arcu cursus. Sagittis id consectetur
+                            purus ut. Tellus rutrum tellus pelle.
+                        </p>
+                    </div>
+                    <div class="policies-area">
+                        <h3 class="title text-left">Cancellation / Return / Exchange Policy</h3>
+                        <p>
+                            <strong>L</strong>orem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt arcu cursus. Sagittis id consectetur
+                            purus ut. Tellus rutrum tellus pelle.
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                    <div class="review-area">
+                        <h3 class="title font-weight-bold mb-5">Write A Review</h3>
+                        <input name="review" type="text" class="form-control" placeholder="your review">
+                        <button class="btn btn-rounded">Add Your Review</button>
+                    </div>
+                    <!-- End of Reveiw Area -->
+                    <div class="review-area">
+                        <h3 class="title font-weight-bold mb-5">Reviews</h3>
+                        <div class="reviewers d-flex align-items-center flex-wrap mb-7">
+                            <div class="reviewers-picture d-flex mr-2">
+                                <figure>
+                                    <img src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
+                                </figure>
+                                <figure>
+                                    <img src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
+                                </figure>
+                                <figure>
+                                    <img src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
+                                </figure>
+                            </div>
+                            <div class="reviewer-name">
+                                <a href="#" class="font-weight-bold mr-1">John Doe</a>has reviewed
+                                this store
+                            </div>
+                        </div>
+                        <!-- End of Reviewers -->
+                        <div class="review-ratings">
+                            <div class="review-ratings-left mr-auto">
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Feature</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Varity</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Flexibility</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Delivery</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Support</label>
+                                </div>
+                            </div>
+                            <!-- End of Review Ratings Left -->
+                            <div class="review-ratings-right">
+                                <div class="average-rating">5.0<sub>/5</sub></div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full mr-0">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End of Review Ratings Right -->
+                        </div>
+                        <!-- End of Review Ratings -->
+                        <div class="user-wrap">
+                            <div class="user-photo">
+                                <figure>
+                                    <img src="~/Content/assets\images\vendor\wcfm\avatar.png" alt="Avatar" width="113" height="112">
+                                </figure>
+                                <div class="rated text-center">
+                                    <label>Rated</label>
+                                    <span class="score">5.0</span>
+                                </div>
+                            </div>
+                            <!-- End of User Photo -->
+                            <div class="user-info">
+                                <h4 class="user-name">John Doe</h4>
+                                <div class="user-date mb-7">
+                                    <span>1 Reviews</span>
+                                    <span>April 1, 2021 12:12 Pm</span>
+                                </div>
+                                <p>
+                                    Diam in arcu cursus euismod quis. Eget sit amet tellusvitae
+                                    sapien pellentesque habitant morbi tristique senectus et.
+                                    Cras adipiscing enim ermentum et sollicitudin ac orci phasellus.
+                                </p>
+                            </div>
+                            <!-- End of User Info -->
+                            <div class="review-ratings">
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Feature</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Varity</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Flexibility</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Delivery</label>
+                                </div>
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 100%;"></span>
+                                    </div>
+                                    <label>5.0 Support</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of User Wrap -->
+                    </div>
+                    <!-- End of Reveiw Area -->
                 </div>
             </div>
-            <!-- End of Main Content -->
         </div>
     </div>
+    <!-- End of Main Content -->
 </div>
