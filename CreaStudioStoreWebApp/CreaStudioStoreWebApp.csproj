@@ -1421,6 +1421,7 @@
     <Content Include="Content\assets\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
     <Content Include="Content\assets\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="Content\assets\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <None Include="Properties\PublishProfiles\store.creativity-creastudio.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
