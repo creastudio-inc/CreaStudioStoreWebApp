@@ -168,14 +168,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CatalogController.cs" />
     <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\CompareController.cs" />
+    <Compile Include="Controllers\DailyDealsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TrackOrderController.cs" />
     <Compile Include="Controllers\VendorsController.cs" />
+    <Compile Include="Controllers\WishlistController.cs" />
     <Compile Include="Entities\Base\EntityBase.cs" />
     <Compile Include="Entities\Blog.cs" />
     <Compile Include="Entities\Cart.cs" />
@@ -1486,6 +1490,11 @@
     <Content Include="Views\Home\Parts\MostPopularBrand.cshtml" />
     <Content Include="Views\Catalog\AllCategories.cshtml" />
     <Content Include="Views\Home\Parts\FeaturedProducts.cshtml" />
+    <Content Include="Views\Blog\List.cshtml" />
+    <Content Include="Views\Blog\Show.cshtml" />
+    <Content Include="Views\Wishlist\List.cshtml" />
+    <Content Include="Views\TrackOrder\Index.cshtml" />
+    <Content Include="Views\DailyDeals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
