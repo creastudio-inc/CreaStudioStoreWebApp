@@ -1,9 +1,20 @@
 ﻿
 @{
     ViewBag.Title = "List";
-    ViewBag.PageHeader= "Vendors List";
+    ViewBag.PageHeader = "Vendors List";
 }
-
+@section Breadcrumb{
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <ul class="breadcrumb bb-no">
+                <li><a href="demo1.html">Home</a></li>
+                <li><a href="#">Vendor</a></li>
+                <li><a href="#">WC Marketplace</a></li>
+                <li>Store List</li>
+            </ul>
+        </div>
+    </nav>
+}
 <!-- Start of Vendor Filter -->
 <div class="vendor-filter mb-4">
     <div class="vendor-filter-left mr-auto">

@@ -14,7 +14,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="~/Content/assets\images\icons\favicon-1.png">
 
-   
+
 
     <link rel="preload" href="~/Content/assets\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="~/Content/assets\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -31,6 +31,8 @@
 
     <!-- Default CSS -->
     <link rel="stylesheet" type="text/css" href="~/Content/assets\css\style.min.css">
+
+
 </head>
 
 <body class="about-us">
@@ -38,6 +40,7 @@
         <!-- Start of Header -->
         @Html.Partial("_Header")
         <!-- End of Header -->
+        @if (ViewBag.PageHeader != null) { 
         <!-- Start of Page Header -->
         <div class="page-header">
             <div class="container">
@@ -45,28 +48,21 @@
             </div>
         </div>
         <!-- End of Page Header -->
+        }
         <!-- Start of Main -->
-        <main class="main">
+    <main class="main">
 
-            <!-- Start of Breadcrumb -->
-            <nav class="breadcrumb-nav">
-                <div class="container">
-                    <ul class="breadcrumb bb-no">
-                        <li><a href="demo1.html">Home</a></li>
-                        <li><a href="#">Vendor</a></li>
-                        <li><a href="#">WC Marketplace</a></li>
-                        <li>Store List</li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- End of Breadcrumb -->
+        <!-- Start of  Breadcrumb-->
+        @RenderSection("Breadcrumb", required: false)
 
-            <div class="page-content mb-8">
-                <div class="container">
-                    @RenderBody()
-                </div>
+        <!-- End of Breadcrumb -->
+
+        <div class="page-content mb-8">
+            <div class="container">
+                @RenderBody()
             </div>
-        </main>
+        </div>
+    </main>
         <!-- End of Main -->
         <!-- Start of Footer -->
         @Html.Partial("_Footer")

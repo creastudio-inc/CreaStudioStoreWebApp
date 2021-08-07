@@ -1,0 +1,400 @@
+﻿
+@{
+    ViewBag.Title = "FeaturedProducts";
+}
+<style>
+    .grid-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(100% / 4));
+}
+
+.grid-type .product-single, .grid-type .product-widget {
+    background-color: #fff;
+    height: 100%;
+}
+
+.grid-type .product-single {
+    padding: 1rem;
+}
+
+@@media (min-width: 768px) {
+    .grid-type .col-md-6:first-child {
+        flex: 0 0 48.6%;
+        max-width: 48.6%;
+        min-height: 35rem;
+    }
+
+    .grid-type .col-md-6:last-child {
+        flex: 0 0 50.5%;
+        max-width: 50.5%;
+    }
+
+    .pr-md-4 {
+        padding-right: 2rem !important;
+    }
+
+    .grid-item-single .product-details {
+        max-height: 35rem;
+        overflow: auto;
+        padding-top: 1.1rem;
+    }
+}
+
+.grid-item-single {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.grid-item-single .product-gallery, .grid-item-single .product-image, .grid-item-single img {
+    min-height: inherit;
+}
+
+.grid-item-single .product-title {
+    font-size: 1.8rem;
+}
+
+.grid-item-single .product-divider {
+    margin: 1.2rem 0 1.6rem;
+}
+
+.grid-item-single .product-price {
+    margin-bottom: 0.8rem;
+    font-size: 2.4rem;
+}
+
+.grid-item-single .product-form label {
+    max-width: 3.8rem;
+    flex: 0 0 3.8rem;
+    font-size: 1.3rem;
+}
+
+.grid-item-single .product-size-swatch .size {
+    color: #999;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+}
+
+.grid-item-single .product-size-swatch .size:not(:last-child) {
+    margin-right: 0.9rem;
+}
+
+.grid-item-single .product-form:not(.product-variation-form) {
+    border-top: 1px solid #eee;
+}
+
+.grid-item-single .product-qty-form {
+    max-width: 13.2rem;
+    flex: 0 0 13.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.grid-item-single .btn-cart {
+    margin-bottom: 0.8rem;
+}
+
+.grid-item-single .ratings-full, .grid-item-single .ratings {
+    letter-spacing: 0.3em;
+}
+
+.input-group button {
+    right: 1.4rem;
+}
+
+.input-group button + button {
+    margin-right: 3.1rem;
+}
+
+.grid-item-widget {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+}
+
+</style>
+
+<section class="grey-section mt-10 appear-animate fadeIn appear-animation-visible" style="animation-duration: 1.2s;">
+    <div class="container mb-2">
+        <div class="title-link-wrapper mb-2">
+            <h2 class="title">Featured Products</h2>
+            <a href="#">More Products<i class="w-icon-long-arrow-right"></i></a>
+        </div>
+        <div class="row grid grid-type">
+            <div class="grid-item grid-item-single">
+                <div class="product product-single">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="product-gallery mb-0">
+                                <figure class="product-image" style="position: relative; overflow: hidden; cursor: pointer;">
+                                    <img src="~/Content/assets/images/demos/demo8/product/2-1.jpg" data-zoom-image="assets/images/demos/demo8/product/2-1-800x900.jpg" alt="Product Image" width="800" height="900">
+                                    <img role="presentation" alt="" src="~/Content/assets/images/demos/demo8/product/2-1-800x900.jpg" class="zoomImg" style="position: absolute; top: 0px; left: -482.282px; opacity: 0; width: 880px; height: 990px; border: none; max-width: none; max-height: none;">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="product-details scrollable pl-0">
+                                <h2 class="product-title mb-1">
+                                    <a href="product-default.html">
+                                        Men's Season
+                                        Blue Clothes
+                                    </a>
+                                </h2>
+
+                                <hr class="product-divider">
+
+                                <div class="product-price">
+                                    <del class="old-price">$284.35</del><ins class="new-price ls-50">$235.35</ins>
+                                </div>
+
+                                <div class="ratings-container">
+                                    <div class="ratings-full">
+                                        <span class="ratings" style="width: 80%;"></span>
+                                        <span class="tooltiptext tooltip-top"></span>
+                                    </div>
+                                    <a href="#" class="rating-reviews">(3 Reviews)</a>
+                                </div>
+
+                                <div class="product-form product-variation-form product-size-swatch mb-3">
+                                    <label class="mb-1">Size:</label>
+                                    <div class="flex-wrap d-flex align-items-center product-variations">
+                                        <a href="#" class="size">Small</a>
+                                        <a href="#" class="size">Medium</a>
+                                        <a href="#" class="size">Large</a>
+                                        <a href="#" class="size">Extra Large</a>
+                                    </div>
+                                    <a href="#" class="product-variation-clean" style="display: none;">Clean All</a>
+                                </div>
+
+                                <div class="product-variation-price">
+                                    <span></span>
+                                </div>
+
+                                <div class="product-form pt-4">
+                                    <div class="product-qty-form mr-2">
+                                        <div class="input-group">
+                                            <input class="quantity form-control pl-4" type="number" min="1" max="10000000">
+                                            <button class="quantity-minus w-icon-minus"></button>
+                                            <button class="quantity-plus w-icon-plus"></button>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-cart disabled">
+                                        <i class="w-icon-cart"></i>
+                                        <span>Add to Cart</span>
+                                    </button>
+                                </div>
+
+                                <div class="social-links-wrapper mt-1">
+                                    <div class="social-links">
+                                        <div class="social-icons social-no-color border-thin">
+                                            <a href="#" class="social-icon social-facebook w-icon-facebook"></a>
+                                            <a href="#" class="social-icon social-twitter w-icon-twitter"></a>
+                                            <a href="#" class="social-icon social-pinterest fab fa-pinterest-p"></a>
+                                            <a href="#" class="social-icon social-whatsapp fab fa-whatsapp"></a>
+                                        </div>
+                                    </div>
+                                    <span class="divider d-xs-show"></span>
+                                    <div class="product-link-wrapper d-flex">
+                                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart"><span></span></a>
+                                        <a href="#" class="btn-product-icon btn-compare btn-icon-left w-icon-compare"><span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-2.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Top Rating Helmet</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 80%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$34.99</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-3.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Smartphone Electronic Charger</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 80%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$35.00</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-4.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Skate Pan</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 80%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$50.99</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-5.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Blue Ski Boots</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 100%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$88.00</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-6.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Dumbells</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 100%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$59.00</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-7.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Professional Perfect Camera</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 100%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$123.00</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-8.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Soft Sound Marker</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 100%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$39.99</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+            <div class="grid-item grid-item-widget">
+                <div class="product product-widget">
+                    <figure class="product-media">
+                        <a href="product-default.html">
+                            <img src="~/Content/assets/images/demos/demo8/product/2-9.jpg" alt="Product" width="300" height="338">
+                        </a>
+                    </figure>
+                    <div class="product-details">
+                        <h4 class="product-name">
+                            <a href="product-default.html">Roller Skates</a>
+                        </h4>
+                        <div class="ratings-container">
+                            <div class="ratings-full">
+                                <span class="ratings" style="width: 100%;"></span>
+                                <span class="tooltiptext tooltip-top"></span>
+                            </div>
+                        </div>
+                        <div class="product-price">
+                            <ins class="new-price">$66.99</ins>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Grid Item -->
+        </div>
+    </div>
+    <!-- End of Container -->
+</section>

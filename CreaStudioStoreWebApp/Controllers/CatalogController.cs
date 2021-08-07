@@ -13,6 +13,10 @@ namespace CreaStudioStoreWebApp.Controllers
         {
             return RedirectToAction("List");
         }
+        public ActionResult AllCategories()
+        {
+            return View();
+        }
         public ActionResult List()
         {
             return View();
