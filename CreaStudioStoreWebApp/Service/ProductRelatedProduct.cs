@@ -1,6 +1,7 @@
-﻿using System;
+﻿using CreaStudioStoreWebApp.Entities;
+using System;
 
-namespace CreaStudioStoreWebApp.Entities
+namespace CreaStudioStoreWebApp.Service
 {
     public class ProductRelatedProductService : CreaStudioStoreWebApp.Service.Base.CrudService<ProductRelatedProduct>
     {

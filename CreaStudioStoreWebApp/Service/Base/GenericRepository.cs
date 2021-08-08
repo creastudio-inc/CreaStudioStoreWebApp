@@ -1,4 +1,4 @@
-﻿using AspnetRun.Core.Entities.Base;
+﻿using CreaStudioStoreWebApp.Entities.Base;
 using CreaStudioStoreWebApp.Models;
 using System;
 using System.Collections.Generic;

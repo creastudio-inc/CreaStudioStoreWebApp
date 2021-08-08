@@ -8,9 +8,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading;
-using System.Threading.Tasks;
-using AspnetRun.Core.Entities.Base;
+using System.Threading.Tasks; 
 using CreaStudioStoreWebApp.Entities;
+using CreaStudioStoreWebApp.Entities.Base;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 

@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using CreaStudioStoreWebApp.Entities;
+using System.Collections.Generic;
 
-namespace CreaStudioStoreWebApp.Entities
+namespace CreaStudioStoreWebApp.Service
 {
     public class OrderService : CreaStudioStoreWebApp.Service.Base.CrudService<Order>
     {       

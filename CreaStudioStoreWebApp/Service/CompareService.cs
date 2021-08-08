@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using CreaStudioStoreWebApp.Entities;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace CreaStudioStoreWebApp.Entities
+namespace CreaStudioStoreWebApp.Service
 {
     public class CompareService : CreaStudioStoreWebApp.Service.Base.CrudService<Compare>
     {        

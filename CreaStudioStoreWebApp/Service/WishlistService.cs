@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using CreaStudioStoreWebApp.Entities; 
 
-namespace CreaStudioStoreWebApp.Entities
+namespace CreaStudioStoreWebApp.Service
 {
     public class WishlistService : CreaStudioStoreWebApp.Service.Base.CrudService<Wishlist>
     {        
