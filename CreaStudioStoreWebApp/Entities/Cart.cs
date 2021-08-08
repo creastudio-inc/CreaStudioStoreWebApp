@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Cart : AspnetRun.Core.Entities.Base.EntityBase
+    public class Cart : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {        
         public string UserName { get; set; }
         public List<CartItem> Items { get; set; } = new List<CartItem>();

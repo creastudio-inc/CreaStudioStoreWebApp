@@ -2,7 +2,7 @@
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Contact : AspnetRun.Core.Entities.Base.EntityBase
+    public class Contact : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {
         [Required]
         public string Name { get; set; }

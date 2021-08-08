@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Compare : AspnetRun.Core.Entities.Base.EntityBase
+    public class Compare : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {        
         public string UserName { get; set; }
         public List<ProductCompare> ProductCompares { get; set; } = new List<ProductCompare>();

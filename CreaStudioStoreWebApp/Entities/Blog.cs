@@ -2,7 +2,7 @@
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Blog : AspnetRun.Core.Entities.Base.EntityBase
+    public class Blog : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {
         [Required, StringLength(80)]
         public string Name { get; set; }

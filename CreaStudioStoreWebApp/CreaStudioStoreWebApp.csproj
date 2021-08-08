@@ -202,6 +202,29 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Base\CrudService.cs" />
+    <Compile Include="Service\Base\DataStore.cs" />
+    <Compile Include="Service\Base\GenericRepository.cs" />
+    <Compile Include="Service\Base\ISpecification.cs" />
+    <Compile Include="Service\Base\SortDescriptor.cs" />
+    <Compile Include="Service\BlogService.cs" />
+    <Compile Include="Service\CartItemService.cs" />
+    <Compile Include="Service\CartSevice.cs" />
+    <Compile Include="Service\CategoryService.cs" />
+    <Compile Include="Service\CompareService.cs" />
+    <Compile Include="Service\ContactService.cs" />
+    <Compile Include="Service\ListService.cs" />
+    <Compile Include="Service\OrderService.cs" />
+    <Compile Include="Service\OrderItemService.cs" />
+    <Compile Include="Service\ProductService.cs" />
+    <Compile Include="Service\ProductCompare.cs" />
+    <Compile Include="Service\ProductListService.cs" />
+    <Compile Include="Service\ProductRelatedProduct.cs" />
+    <Compile Include="Service\ProductWishlistService.cs" />
+    <Compile Include="Service\ReviewService.cs" />
+    <Compile Include="Service\SpecificationService.cs" />
+    <Compile Include="Service\TagService.cs" />
+    <Compile Include="Service\WishlistService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

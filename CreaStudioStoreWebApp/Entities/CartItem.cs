@@ -3,7 +3,7 @@ using System;
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class CartItem : AspnetRun.Core.Entities.Base.EntityBase
+    public class CartItem : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {       
         public int Quantity { get; set; }
         public string Color { get; set; }

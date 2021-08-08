@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Wishlist : AspnetRun.Core.Entities.Base.EntityBase
+    public class Wishlist : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {        
         public string UserName { get; set; }
         public List<ProductWishlist> ProductWishlists { get; set; } = new List<ProductWishlist>();

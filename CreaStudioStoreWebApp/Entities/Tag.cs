@@ -1,7 +1,7 @@
 ﻿
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Tag : AspnetRun.Core.Entities.Base.EntityBase
+    public class Tag : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {
         public string Name { get; set; }
     }

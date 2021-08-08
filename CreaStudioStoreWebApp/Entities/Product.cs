@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Product : AspnetRun.Core.Entities.Base.EntityBase
+    public class Product : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {
         [Required, StringLength(80)]
         public string Name { get; set; }

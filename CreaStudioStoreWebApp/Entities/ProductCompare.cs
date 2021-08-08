@@ -2,7 +2,7 @@
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class ProductCompare : AspnetRun.Core.Entities.Base.EntityBase
+    public class ProductCompare : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {
         public int ProductId { get; set; }
         public Product Product { get; set; }

@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AspnetRun.Core.Entities.Base
+namespace CreaStudioStoreWebApp.Entities.Base
 {
-    public abstract class EntityBase 
+    public abstract class EntityBase
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -12,6 +12,7 @@ namespace AspnetRun.Core.Entities.Base
         public Guid Id { get; set; }
 
         private DateTime? createdDate;
+
         [DataType(DataType.DateTime)]
         public DateTime CreatedOn
         {
@@ -28,5 +29,9 @@ namespace AspnetRun.Core.Entities.Base
 
         public Boolean IsDeleted { get; set; }
 
+        public virtual bool IsTransient()
+        {
+            return Id.Equals(default(Guid));
+        }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Order : AspnetRun.Core.Entities.Base.EntityBase
+    public class Order : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {       
         public string UserName { get; set; }
         public Address BillingAddress { get; set; }

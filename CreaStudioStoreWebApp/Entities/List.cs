@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class List : AspnetRun.Core.Entities.Base.EntityBase
+    public class List : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {        
         [Required, StringLength(80)]
         public string Name { get; set; }        

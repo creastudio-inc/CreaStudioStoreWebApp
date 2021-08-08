@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CreaStudioStoreWebApp.Entities
 {
-    public class Category : AspnetRun.Core.Entities.Base.EntityBase
+    public class Category : CreaStudioStoreWebApp.Entities.Base.EntityBase
     {
         [Required, StringLength(80)]
         public string Name { get; set; }
