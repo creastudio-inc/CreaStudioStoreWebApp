@@ -31,6 +31,8 @@
 
     <!-- Default CSS -->
     <link rel="stylesheet" type="text/css" href="~/Content/assets\css\style.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/assets\css/demo1.min.css">
+    @RenderSection("styles", required: false)
 
 
 </head>
@@ -40,29 +42,30 @@
         <!-- Start of Header -->
         @Html.Partial("_Header")
         <!-- End of Header -->
-        @if (ViewBag.PageHeader != null) { 
-        <!-- Start of Page Header -->
-        <div class="page-header">
-            <div class="container">
-                <h1 class="page-title mb-0">@ViewBag.PageHeader</h1>
+        @if (ViewBag.PageHeader != null)
+        {
+            <!-- Start of Page Header -->
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title mb-0">@ViewBag.PageHeader</h1>
+                </div>
             </div>
-        </div>
-        <!-- End of Page Header -->
+            <!-- End of Page Header -->
         }
         <!-- Start of Main -->
-    <main class="main">
+        <main class="main">
 
-        <!-- Start of  Breadcrumb-->
-        @RenderSection("Breadcrumb", required: false)
+            <!-- Start of  Breadcrumb-->
+            @RenderSection("Breadcrumb", required: false)
 
-        <!-- End of Breadcrumb -->
+            <!-- End of Breadcrumb -->
 
-        <div class="page-content mb-8">
-            <div class="container">
-                @RenderBody()
+            <div class="page-content mb-8">
+                <div class="container">
+                    @RenderBody()
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
         <!-- End of Main -->
         <!-- Start of Footer -->
         @Html.Partial("_Footer")
@@ -758,5 +761,7 @@
     <script src="~/Content/assets\vendor\owl-carousel\owl.carousel.min.js"></script>
     <script src="~/Content/assets\vendor\magnific-popup\jquery.magnific-popup.min.js"></script>
     <script src="~/Content/assets\js\main.min-1.js"></script>
+    @RenderSection("scripts", required: false)
+
 </body>
 </html>
